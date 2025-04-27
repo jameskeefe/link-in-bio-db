@@ -8,7 +8,97 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /*
+        * {
+          border: 1px red dashed;
+        }
+        */
+        
+        html {
+        min-height: 100%;
+        }
+
+        body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: linear-gradient(180deg, #003f5b, #305270, #4e6686, #6a7b9d, #8691b5, #a2a7ce, #bebee6, #dbd6ff);
+        color: rgba(255, 255, 255, 1.0);
+        }
+
+        a {
+          color: rgba(255, 255, 255, 1.0);
+          text-decoration: none;
+          font-family: "Lora";
+        }
+
+        .link-text {
+        text-align: center;
+        flex-grow: 1;
+        }
+
+        .main-container {
+        max-width: 640px;
+        margin: auto;
+        }
+
+        .avatar-image {
+          width: 128px;
+          height: 128px;
+          object-fit: cover;
+          border-radius: 128px;
+        }
+
+        .thumbnail {
+          width: 48px;
+          height: 48px;
+          border-radius: 48px;
+          object-fit: cover;
+        }
+
+        .item {
+          background-color: rgba(149, 123, 173, 0.5);
+          margin-bottom: 30px;
+          display: flex;
+          align-items: center;
+          border-radius: 1000px;
+          padding: 5px;
+          padding-right: 53px;
+          box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+        }
+
+        .name-row {
+          margin-bottom: 30px;
+          text-align: center;
+          font-family: "Roboto";
+          font-size: 24px;
+          font-weight: 500;
+        }
+
+
+        .image-row {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        .social-icons-row{
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: space-around;
+        }
+
+    </style>
   </head>
+
+
 
   <body>
     <%= yield %>
